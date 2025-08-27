@@ -8,44 +8,55 @@ public class MovimientoP1 : MonoBehaviour
     [Header("Movimiento")]
     public float speed = 5f;
     public float salto = 10f;
-    public float dobleSalto = 8f;
+    public float orbJumpForce = 12f;
 
     [Header("Dash Aéreo")]
-    public float dashForce = 15f;     // fuerza del dash
-    public float dashDuration = 0.2f; // cuánto dura el dash
-    private bool canAirDash = true;   // se reinicia al tocar suelo
+    public float dashForce = 15f;
+    public float dashDuration = 0.2f;
+    private bool canAirDash = true;
     private bool isDashing = false;
 
-    private bool canDoubleJump = false;
-    private bool hasDoubleJumpPowerUp = false;
+    private bool isInsideOrb = false;   // ¿estamos dentro de un círculo/orb?
+    private Collider2D currentOrb = null;
+
+    private Animator animator;
 
     void Start()
     {
         rigidbody2D = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
     }
 
     void Update()
     {
-        if (!isDashing) // mientras dasheás, no podés mover
+        if (!isDashing)
         {
             // Movimiento horizontal
             float moveHorizontal = Input.GetAxis("Horizontal");
             rigidbody2D.linearVelocity = new Vector2(moveHorizontal * speed, rigidbody2D.linearVelocity.y);
+            animator.SetFloat("Caminata", Mathf.Abs(moveHorizontal));
+            if (moveHorizontal > 0)
+            { 
+                transform.rotation = Quaternion.Euler(0, 0, 0);
+            }else if (moveHorizontal < 0)
+            {
+                transform.rotation = Quaternion.Euler(0, 180, 0);
+            }
         }
 
-        // Salto normal y doble salto
-        if (Input.GetKeyDown(KeyCode.Space))
+        // Salto normal desde el suelo
+        if (Input.GetKeyDown(KeyCode.Space) && IsGrounded())
         {
-            if (IsGrounded())
-            {
-                Jump(salto);
-                canDoubleJump = true; // habilitamos el doble salto cuando dejamos el suelo
-            }
-            else if (canDoubleJump && hasDoubleJumpPowerUp)
-            {
-                Jump(dobleSalto);
-                canDoubleJump = false; // ya usó su doble salto
-            }
+            Jump(salto);
+        }
+
+        // Salto con ORB (Geometry Dash style)
+        if (Input.GetKeyDown(KeyCode.Space) && isInsideOrb && currentOrb != null)
+        {
+            Jump(orbJumpForce);
+            Destroy(currentOrb.gameObject); // consumir el orb
+            isInsideOrb = false;
+            currentOrb = null;
         }
 
         // Dash aéreo
@@ -57,25 +68,34 @@ public class MovimientoP1 : MonoBehaviour
 
     private void Jump(float fuerza)
     {
-        Vector2 jumpForce = new Vector2(0, fuerza);
-        rigidbody2D.linearVelocity = new Vector2(rigidbody2D.linearVelocity.x, 0); // resetear Y antes del salto
-        rigidbody2D.AddForce(jumpForce, ForceMode2D.Impulse);
+        // Resetear velocidad Y antes de aplicar impulso
+        rigidbody2D.linearVelocity = new Vector2(rigidbody2D.linearVelocity.x, 0);
+        rigidbody2D.AddForce(new Vector2(0, fuerza), ForceMode2D.Impulse);
     }
 
-    // Detecta si tocamos el suelo
     private bool IsGrounded()
     {
-        // Placeholder: ideal usar raycast o collision checks
+        // Placeholder, lo ideal es raycast o colisión con "Suelo"
         return Mathf.Abs(rigidbody2D.linearVelocity.y) < 0.01f;
     }
 
     void OnTriggerEnter2D(Collider2D collision)
     {
+        if (collision.CompareTag("DobleSalto")) // orb
+        {
+            Debug.Log("Entró en orb");
+            isInsideOrb = true;
+            currentOrb = collision;
+        }
+    }
+
+    void OnTriggerExit2D(Collider2D collision)
+    {
         if (collision.CompareTag("DobleSalto"))
         {
-            Debug.Log("PowerUp de doble salto obtenido");
-            hasDoubleJumpPowerUp = true;
-            Destroy(collision.gameObject);
+            Debug.Log("Salió del orb");
+            isInsideOrb = false;
+            currentOrb = null;
         }
     }
 
@@ -83,8 +103,7 @@ public class MovimientoP1 : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Suelo"))
         {
-            canDoubleJump = false; // resetea al tocar el suelo
-            canAirDash = true;     // recuperamos el dash
+            canAirDash = true; // recuperamos el dash al tocar suelo
         }
     }
 
@@ -93,11 +112,10 @@ public class MovimientoP1 : MonoBehaviour
         isDashing = true;
         canAirDash = false;
 
-        float direction = Input.GetAxisRaw("Horizontal"); 
-        if (direction == 0) direction = transform.localScale.x; // si no apretás, dasha hacia donde mire
+        float direction = Input.GetAxisRaw("Horizontal");
+        if (direction == 0) direction = transform.localScale.x;
 
-        // Aplica impulso horizontal, cancelando velocidad previa
-        rigidbody2D.linearVelocity = new Vector2(0, 0);
+        rigidbody2D.linearVelocity = Vector2.zero;
         rigidbody2D.AddForce(new Vector2(direction * dashForce, 0), ForceMode2D.Impulse);
 
         yield return new WaitForSeconds(dashDuration);
