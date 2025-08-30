@@ -8,6 +8,7 @@ TagManager:
   - PlayerTwo
   - DobleSalto
   - Suelo
+  - Meta
   layers:
   - Default
   - TransparentFX
