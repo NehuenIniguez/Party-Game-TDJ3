@@ -54,7 +54,6 @@ public class MovimientoP1 : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && isInsideOrb && currentOrb != null)
         {
             Jump(orbJumpForce);
-            Destroy(currentOrb.gameObject); // consumir el orb
             isInsideOrb = false;
             currentOrb = null;
         }
@@ -104,6 +103,7 @@ public class MovimientoP1 : MonoBehaviour
         if (collision.gameObject.CompareTag("Suelo"))
         {
             canAirDash = true; // recuperamos el dash al tocar suelo
+            animator.SetBool("Dash", false);
         }
     }
 
@@ -117,9 +117,10 @@ public class MovimientoP1 : MonoBehaviour
 
         rigidbody2D.linearVelocity = Vector2.zero;
         rigidbody2D.AddForce(new Vector2(direction * dashForce, 0), ForceMode2D.Impulse);
+        animator.SetBool("Dash", true);
 
         yield return new WaitForSeconds(dashDuration);
-
+        
         isDashing = false;
     }
 }
