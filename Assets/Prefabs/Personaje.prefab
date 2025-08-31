@@ -178,7 +178,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 15
   salto: 55
-  orbJumpForce: 65
+  orbJumpForce: 55
   dashForce: 35
   dashDuration: 0.2
 --- !u!95 &2414807583230920700
