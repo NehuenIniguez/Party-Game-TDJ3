@@ -176,10 +176,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3b4da2731d34844783487bf72fe0642, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 15
+  speed: 10
   salto: 55
   orbJumpForce: 55
-  dashForce: 35
+  dashForce: 45
   dashDuration: 0.2
 --- !u!95 &2414807583230920700
 Animator:

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7201156503002435169}
   - component: {fileID: 6403505680256405826}
   - component: {fileID: 3656091308906077404}
+  - component: {fileID: 2695099962411770440}
   m_Layer: 0
   m_Name: OjoGuia
   m_TagString: Untagged
@@ -110,3 +111,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &2695099962411770440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4627356731017371812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4036ec7676e55aa42b1a46dec59607b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textos:
+  - {fileID: 0}
+  imagenFondo: {fileID: 0}
+  cinemachine: {fileID: 0}

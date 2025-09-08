@@ -13,4 +13,8 @@ public class PasoNivel : MonoBehaviour
         }
     }
   
+  public void pasonivel()
+  {
+    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+  }
 }
