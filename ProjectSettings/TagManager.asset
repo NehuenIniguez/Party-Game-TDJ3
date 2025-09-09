@@ -9,6 +9,7 @@ TagManager:
   - DobleSalto
   - Suelo
   - Meta
+  - Caida
   layers:
   - Default
   - TransparentFX

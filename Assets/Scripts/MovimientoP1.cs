@@ -5,6 +5,8 @@ public class MovimientoP1 : MonoBehaviour
 {
     private Rigidbody2D rigidbody2D;
 
+    [SerializeField] private Transform respawnPoint;
+
     [Header("Movimiento")]
     public float speed = 5f;
     public float salto = 10f;
@@ -106,6 +108,11 @@ public class MovimientoP1 : MonoBehaviour
         {
             canAirDash = true;
             animator.SetBool("Dash", false);
+        }
+
+        if (collision.gameObject.CompareTag("Caida"))
+        {
+            transform.position = respawnPoint.position; 
         }
     }
 
