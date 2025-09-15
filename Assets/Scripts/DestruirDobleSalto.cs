@@ -38,7 +38,15 @@ public class DestruirDobleSalto : MonoBehaviour
     private IEnumerator Destroy()
     {
         animator.SetTrigger("Destruccion");
-        yield return new WaitForSeconds(0.5f); 
-        Destroy(gameObject);
+        yield return new WaitForSeconds(0.5f);
+        Apagar();
+    }
+    private void Apagar()
+    {
+        gameObject.SetActive(false);
+    }
+    public void Reaparecer()
+    {
+        gameObject.SetActive(true);
     }
 }
