@@ -1,0 +1,1053 @@
+fileFormatVersion: 2
+guid: 3bbd39b3be35e2b4f91c42531450d2da
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 487220386374221147
+    second: jugar boton_0
+  - first:
+      213: 2709956189207642336
+    second: jugar boton_1
+  - first:
+      213: -706767049114680883
+    second: jugar boton_2
+  - first:
+      213: 9138835776214873198
+    second: jugar boton_3
+  - first:
+      213: 6499445479589321297
+    second: jugar boton_4
+  - first:
+      213: 3166427838415766300
+    second: jugar boton_5
+  - first:
+      213: -6456497816580536962
+    second: jugar boton_6
+  - first:
+      213: 4514732552921720335
+    second: jugar boton_7
+  - first:
+      213: -6764701257059716751
+    second: jugar boton_8
+  - first:
+      213: 8484344676031361608
+    second: jugar boton_9
+  - first:
+      213: 4727086967419775601
+    second: jugar boton_10
+  - first:
+      213: -7200787297517468297
+    second: jugar boton_11
+  - first:
+      213: 4550776688744831508
+    second: jugar boton_12
+  - first:
+      213: 8107776243551647132
+    second: jugar boton_13
+  - first:
+      213: -5708872448675937615
+    second: jugar boton_14
+  - first:
+      213: 7054588689103306766
+    second: jugar boton_15
+  - first:
+      213: 3089980210410659901
+    second: jugar boton_16
+  - first:
+      213: 6850902211842927055
+    second: jugar boton_17
+  - first:
+      213: 5545749533806746867
+    second: jugar boton_18
+  - first:
+      213: -4576512676967790062
+    second: jugar boton_19
+  - first:
+      213: -1078503554865762650
+    second: jugar boton_20
+  - first:
+      213: 6162100644424308163
+    second: jugar boton_21
+  - first:
+      213: -2406283798719778125
+    second: jugar boton_22
+  - first:
+      213: -8802973273179878554
+    second: jugar boton_23
+  - first:
+      213: 1100876483340683463
+    second: jugar boton_24
+  - first:
+      213: -4743701403053789651
+    second: jugar boton_25
+  - first:
+      213: -8471335595020784308
+    second: jugar boton_26
+  - first:
+      213: 1987998857138806234
+    second: jugar boton_27
+  - first:
+      213: 5352600088862315377
+    second: jugar boton_28
+  - first:
+      213: -2934801257407029685
+    second: jugar boton_29
+  - first:
+      213: 8485033279499324109
+    second: jugar boton_30
+  - first:
+      213: 4735548991410200162
+    second: jugar boton_31
+  - first:
+      213: -1198393619807048391
+    second: jugar boton_32
+  - first:
+      213: 8773447807770229359
+    second: jugar boton_33
+  - first:
+      213: 3690956716813262679
+    second: jugar boton_34
+  - first:
+      213: 7193819623996591898
+    second: jugar boton_35
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: 12
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: jugar boton_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 0
+        width: 379
+        height: 1024
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5df9292c54f2c600800000000000000
+      internalID: 487220386374221147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar boton_1
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 972
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e0c79ecbc2bb9520800000000000000
+      internalID: 2709956189207642336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar boton_2
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 719
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc1819a0d1f0136f0800000000000000
+      internalID: -706767049114680883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar boton_3
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 619
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e643be508baa3de70800000000000000
+      internalID: 9138835776214873198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar boton_4
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 336
+        width: 8
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15a90f76a3ba23a50800000000000000
+      internalID: 6499445479589321297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar boton_5
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 326
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c130ea3b75961fb20800000000000000
+      internalID: 3166427838415766300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar boton_6
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 95
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e75c1ad9179e566a0800000000000000
+      internalID: -6456497816580536962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar boton_7
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 87
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f06aac8365d87ae30800000000000000
+      internalID: 4514732552921720335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar boton_8
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 0
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17131513c04fe12a0800000000000000
+      internalID: -6764701257059716751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar boton_9
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 31
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84273d6e7827eb570800000000000000
+      internalID: 8484344676031361608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar boton_10
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 735
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17a2f6b3d8cf99140800000000000000
+      internalID: 4727086967419775601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar boton_11
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 406
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7758354ba1aa11c90800000000000000
+      internalID: -7200787297517468297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar boton_12
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 567
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41a93c0994b972f30800000000000000
+      internalID: 4550776688744831508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar boton_13
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 0
+        width: 987
+        height: 700
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c953f33698b948070800000000000000
+      internalID: 8107776243551647132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar boton_14
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 705
+        width: 36
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b208ac31c206c0b0800000000000000
+      internalID: -5708872448675937615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar boton_15
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 753
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e00cd72390fe6e160800000000000000
+      internalID: 7054588689103306766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar boton_16
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 223
+        width: 31
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d30a38441a0d1ea20800000000000000
+      internalID: 3089980210410659901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar boton_17
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 699
+        width: 367
+        height: 325
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc9e5d7934b431f50800000000000000
+      internalID: 6850902211842927055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar boton_18
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 255
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fcd6df71d576fc40800000000000000
+      internalID: 5545749533806746867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar boton_19
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 249
+        width: 20
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21a434bb7f5fc70c0800000000000000
+      internalID: -4576512676967790062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar boton_20
+      rect:
+        serializedVersion: 2
+        x: 695
+        y: 720
+        width: 44
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6aeea332bb26801f0800000000000000
+      internalID: -1078503554865762650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar boton_21
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 141
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c5dd1d43ed248550800000000000000
+      internalID: 6162100644424308163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar boton_22
+      rect:
+        serializedVersion: 2
+        x: 829
+        y: 0
+        width: 695
+        height: 1024
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b2b78452a92b9ed0800000000000000
+      internalID: -2406283798719778125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar boton_23
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 792
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66b0bdcb27e85d580800000000000000
+      internalID: -8802973273179878554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar boton_24
+      rect:
+        serializedVersion: 2
+        x: 909
+        y: 931
+        width: 7
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c84a133459174f00800000000000000
+      internalID: 1100876483340683463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar boton_25
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 271
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2ee47605bcfa2eb0800000000000000
+      internalID: -4743701403053789651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar boton_26
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 200
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4de9adc825cf6a80800000000000000
+      internalID: -8471335595020784308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar boton_27
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 176
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: add14ad7d6ac69b10800000000000000
+      internalID: 1987998857138806234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar boton_28
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 152
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 173dc59eb61484a40800000000000000
+      internalID: 5352600088862315377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar boton_29
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 90
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4e52ed3ecd7547d0800000000000000
+      internalID: -2934801257407029685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar boton_30
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 24
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcacce3efc4e0c570800000000000000
+      internalID: 8485033279499324109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar boton_31
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 186
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26ed679b7bc08b140800000000000000
+      internalID: 4735548991410200162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar boton_32
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 146
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93d6e462a537e5fe0800000000000000
+      internalID: -1198393619807048391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar boton_33
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 303
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6af2952c4c81c970800000000000000
+      internalID: 8773447807770229359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar boton_34
+      rect:
+        serializedVersion: 2
+        x: 1214
+        y: 389
+        width: 51
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75f1ff21499e83330800000000000000
+      internalID: 3690956716813262679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jugar boton_35
+      rect:
+        serializedVersion: 2
+        x: 1277
+        y: 526
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1f0d8265d495d360800000000000000
+      internalID: 7193819623996591898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      jugar boton_0: 487220386374221147
+      jugar boton_1: 2709956189207642336
+      jugar boton_10: 4727086967419775601
+      jugar boton_11: -7200787297517468297
+      jugar boton_12: 4550776688744831508
+      jugar boton_13: 8107776243551647132
+      jugar boton_14: -5708872448675937615
+      jugar boton_15: 7054588689103306766
+      jugar boton_16: 3089980210410659901
+      jugar boton_17: 6850902211842927055
+      jugar boton_18: 5545749533806746867
+      jugar boton_19: -4576512676967790062
+      jugar boton_2: -706767049114680883
+      jugar boton_20: -1078503554865762650
+      jugar boton_21: 6162100644424308163
+      jugar boton_22: -2406283798719778125
+      jugar boton_23: -8802973273179878554
+      jugar boton_24: 1100876483340683463
+      jugar boton_25: -4743701403053789651
+      jugar boton_26: -8471335595020784308
+      jugar boton_27: 1987998857138806234
+      jugar boton_28: 5352600088862315377
+      jugar boton_29: -2934801257407029685
+      jugar boton_3: 9138835776214873198
+      jugar boton_30: 8485033279499324109
+      jugar boton_31: 4735548991410200162
+      jugar boton_32: -1198393619807048391
+      jugar boton_33: 8773447807770229359
+      jugar boton_34: 3690956716813262679
+      jugar boton_35: 7193819623996591898
+      jugar boton_4: 6499445479589321297
+      jugar boton_5: 3166427838415766300
+      jugar boton_6: -6456497816580536962
+      jugar boton_7: 4514732552921720335
+      jugar boton_8: -6764701257059716751
+      jugar boton_9: 8484344676031361608
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

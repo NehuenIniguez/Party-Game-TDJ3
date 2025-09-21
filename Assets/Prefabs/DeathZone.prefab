@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8728938371159559493}
   - component: {fileID: 7221357754599998136}
+  - component: {fileID: 749455206013622533}
   m_Layer: 0
   m_Name: DeathZone
   m_TagString: Caida
@@ -78,3 +79,16 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 46.59487, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &749455206013622533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3549204167617975147}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ee1f36912dbb324fa4b58cd4a73b2ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  orbes: []

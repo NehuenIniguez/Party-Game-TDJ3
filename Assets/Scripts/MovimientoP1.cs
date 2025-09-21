@@ -112,7 +112,8 @@ public class MovimientoP1 : MonoBehaviour
 
         if (collision.gameObject.CompareTag("Caida"))
         {
-            transform.position = respawnPoint.position; 
+            
+            transform.position = respawnPoint.position;
         }
     }
 

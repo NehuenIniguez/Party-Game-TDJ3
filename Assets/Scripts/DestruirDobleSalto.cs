@@ -43,10 +43,9 @@ public class DestruirDobleSalto : MonoBehaviour
     }
     private void Apagar()
     {
-        gameObject.SetActive(false);
+        gameObject.GetComponent<Collider2D>().enabled = false;
+        gameObject.GetComponent<SpriteRenderer>().enabled = false;
+        animator.SetTrigger("Normal");
     }
-    public void Reaparecer()
-    {
-        gameObject.SetActive(true);
-    }
+    
 }
