@@ -10,6 +10,7 @@ TagManager:
   - Suelo
   - Meta
   - Caida
+  - Estrella
   layers:
   - Default
   - TransparentFX

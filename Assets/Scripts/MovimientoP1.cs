@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using Unity.VisualScripting;
 
 public class MovimientoP1 : MonoBehaviour
 {
@@ -18,7 +19,7 @@ public class MovimientoP1 : MonoBehaviour
     private bool canAirDash = true;
     private bool isDashing = false;
 
-    private bool isInsideOrb = false;   
+    private bool isInsideOrb = false;
     private Collider2D currentOrb = null;
 
     private Animator animator;
@@ -38,7 +39,14 @@ public class MovimientoP1 : MonoBehaviour
             // Movimiento horizontal
             float moveHorizontal = Input.GetAxis("Horizontal");
             rigidbody2D.linearVelocity = new Vector2(moveHorizontal * speed, rigidbody2D.linearVelocity.y);
-            animator.SetFloat("Caminata", Mathf.Abs(moveHorizontal));
+            if (IsGrounded())
+            {
+                animator.SetFloat("Caminata", Mathf.Abs(moveHorizontal));
+            }
+            else
+            {
+                animator.SetFloat("Caminata", 0); // evita caminar en el aire
+            }
 
             if (moveHorizontal > 0)
             {
@@ -50,12 +58,14 @@ public class MovimientoP1 : MonoBehaviour
                 transform.rotation = Quaternion.Euler(0, 180, 0);
                 facingDirection = -1;
             }
+            animator.SetFloat("VelocidadY", rigidbody2D.linearVelocity.y);
         }
 
         // Salto normal
         if (Input.GetKeyDown(KeyCode.Space) && IsGrounded())
         {
             Jump(salto);
+            animator.SetTrigger("Salto");
         }
 
         // Salto con ORB
@@ -64,6 +74,7 @@ public class MovimientoP1 : MonoBehaviour
             Jump(orbJumpForce);
             isInsideOrb = false;
             currentOrb = null;
+            animator.SetTrigger("DobleSalto");
         }
 
         // Dash aéreo
@@ -81,15 +92,21 @@ public class MovimientoP1 : MonoBehaviour
 
     private bool IsGrounded()
     {
+        animator.SetTrigger("Piso");
         return Mathf.Abs(rigidbody2D.linearVelocity.y) < 0.01f;
+
     }
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("DobleSalto")) 
+        if (collision.CompareTag("DobleSalto"))
         {
             isInsideOrb = true;
             currentOrb = collision;
+        }
+         if (collision.CompareTag("Estrella"))
+        {
+            StartCoroutine(aniamcionGanar());
         }
     }
 
@@ -112,7 +129,7 @@ public class MovimientoP1 : MonoBehaviour
 
         if (collision.gameObject.CompareTag("Caida"))
         {
-            
+
             transform.position = respawnPoint.position;
         }
     }
@@ -130,5 +147,12 @@ public class MovimientoP1 : MonoBehaviour
         yield return new WaitForSeconds(dashDuration);
 
         isDashing = false;
+    }
+    
+    IEnumerator aniamcionGanar()
+    {
+        animator.SetTrigger("Ganar");
+        yield return new WaitForSeconds(2f);
+        // Aquí puedes agregar la lógica para avanzar al siguiente nivel o reiniciar el nivel
     }
 }
