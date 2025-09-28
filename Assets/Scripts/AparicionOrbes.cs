@@ -13,6 +13,9 @@ public class AparicionOrbes : MonoBehaviour
                 orb.GetComponent<Renderer>().enabled = true;
                 orb.GetComponent<Collider2D>().enabled = true;
             }
+
+            collision.gameObject.GetComponent<AirDash>().enabled = false;
+            collision.gameObject.GetComponent<DisparoPlataforma>().enabled = false;
         }
     }
 }

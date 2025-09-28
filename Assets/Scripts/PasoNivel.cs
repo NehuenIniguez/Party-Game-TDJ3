@@ -4,9 +4,14 @@ using UnityEngine.SceneManagement;
 
 public class PasoNivel : MonoBehaviour
 {
+  private AudioSource audioSource;
+  public AudioClip audioClip;
+    void Start()
+    {
+    audioSource = GetComponent<AudioSource>();
+    }
 
-
-  void OnTriggerEnter2D(Collider2D collision)
+    void OnTriggerEnter2D(Collider2D collision)
   {
     if (collision.CompareTag("Player"))
     {
@@ -22,7 +27,8 @@ public class PasoNivel : MonoBehaviour
   IEnumerator PasoNivelCoroutine()
   { 
     gameObject.GetComponent<Animator>().SetTrigger("Recolectado");
-    yield return new WaitForSeconds(2f);
+    audioSource.PlayOneShot(audioClip);
+    yield return new WaitForSeconds(1.5f);
     SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
   }
 }

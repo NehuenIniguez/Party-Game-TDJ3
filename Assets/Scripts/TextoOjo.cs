@@ -8,7 +8,7 @@ public class ControladorTutorial : MonoBehaviour
 {
     public GameObject[] textos;
     public Image imagenFondo;
-    public Image imagenOjo;
+
     private int indice = 0;
     [SerializeField] private CinemachineCamera cinemachine;
     private TextMeshProUGUI textoActualUI;
@@ -25,7 +25,7 @@ public class ControladorTutorial : MonoBehaviour
 
         // Activa fondo y primer texto
         imagenFondo.enabled = true;
-        imagenOjo.enabled = true;
+        
         for (int i = 0; i < textos.Length; i++)
             textos[i].SetActive(i == 0);
 
@@ -77,7 +77,6 @@ public class ControladorTutorial : MonoBehaviour
 
             Time.timeScale = 1;
             imagenFondo.enabled = false;
-            imagenOjo.enabled = false;
             //Destroy(gameObject);
         }
     }

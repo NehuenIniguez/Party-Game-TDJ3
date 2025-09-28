@@ -11,6 +11,8 @@ TagManager:
   - Meta
   - Caida
   - Estrella
+  - Libro
+  - Pluma
   layers:
   - Default
   - TransparentFX
