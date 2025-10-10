@@ -2,6 +2,7 @@ using UnityEngine;
 using System.Collections;
 using System;
 using JetBrains.Annotations;
+using Unity.Cinemachine;
 
 public class MovimientoP1 : MonoBehaviour
 {
@@ -13,6 +14,7 @@ public class MovimientoP1 : MonoBehaviour
     [SerializeField] private AudioClip muerteSound;
     private AudioSource audioSource;
     public bool IsGrounded = false;
+    [SerializeField] private CinemachineCamera camara;
 
     [Header("Movimiento")]
     public float speed = 5f;
@@ -34,6 +36,7 @@ public class MovimientoP1 : MonoBehaviour
         rb2D = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         audioSource = GetComponent<AudioSource>();
+
     }
 
     void Update()
@@ -71,7 +74,7 @@ public class MovimientoP1 : MonoBehaviour
         }
 
         // Salto normal
-        if (Input.GetKeyDown(KeyCode.Space) && IsGrounded)
+        if (Input.GetKeyDown(KeyCode.Space) && IsGrounded || Input.GetButtonDown("Jump") && IsGrounded)
         {
             Jump(salto);
             animator.SetTrigger("Salto");
@@ -80,7 +83,7 @@ public class MovimientoP1 : MonoBehaviour
         }
 
         // Salto con ORB
-        if (Input.GetKeyDown(KeyCode.Space) && isInsideOrb && currentOrb != null)
+        if (Input.GetKeyDown(KeyCode.Space) && isInsideOrb && currentOrb != null|| Input.GetButtonDown("Jump") && isInsideOrb && currentOrb != null)
         {
             Jump(orbJumpForce);
             isInsideOrb = false;
@@ -149,10 +152,43 @@ public class MovimientoP1 : MonoBehaviour
 
     IEnumerator aniamcionGanar()
     {
-        canMove = false; // Bloquea el movimiento
+        canMove = false;
         animator.SetTrigger("Ganar");
+
+        // Guardamos los valores actuales
+        Transform objetivoOriginal = camara.Follow;
+        float tamañoOriginal = camara.Lens.OrthographicSize;
+
+        // Cambiamos el objetivo temporalmente al personaje
+        camara.Follow = transform;
+
+        // Offset opcional (por si tu personaje está más abajo o arriba del centro visual)
+        Vector3 offset = new Vector3(0, 0, -10f); // mantené la Z de la cámara original
         
-        yield return new WaitForSeconds(2f); // Espera para que la animación se vea
+        Vector3 posicionObjetivo = transform.position;
+
+        // Hacemos un zoom suave hacia el personaje
+        float tamañoFinal = 5f;
+        float duracionZoom = 0.5f;
+        float tiempo = 0f;
+
+        while (tiempo < duracionZoom)
+        {
+            tiempo += Time.deltaTime;
+            float t = Mathf.SmoothStep(0, 1, tiempo / duracionZoom); // más suave que Lerp lineal
+
+            camara.Lens.OrthographicSize = Mathf.Lerp(tamañoOriginal, tamañoFinal, t);
+            camara.transform.position = Vector3.Lerp(camara.transform.position, posicionObjetivo, t);
+
+            yield return null;
+        }
+
+        camara.Lens.OrthographicSize = tamañoFinal;
+        camara.transform.position = posicionObjetivo;
+
+        // Espera mientras se reproduce la animación
+        yield return new WaitForSeconds(2f);
+
     }
     IEnumerator aniamcionPerder()
     {

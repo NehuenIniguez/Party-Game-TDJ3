@@ -24,20 +24,10 @@ public class AirDash : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.RightShift) && !movimiento.IsGrounded)
+        if (Input.GetKeyDown(KeyCode.RightShift) && !movimiento.IsGrounded || Input.GetButtonDown("Fire2") && !movimiento.IsGrounded)
         {
-            if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
-            {
-                facingDirection = -1;
-                StartCoroutine(DoAirDash());
-            }
-            else if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
-            {
-                facingDirection = 1;
-                StartCoroutine(DoAirDash());
-            }
-            
-           
+            facingDirection = movimiento.facingDirection;
+            StartCoroutine(DoAirDash());
         }
     }
 

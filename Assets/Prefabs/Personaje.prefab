@@ -49,6 +49,7 @@ GameObject:
   - component: {fileID: 1823001051197075142}
   - component: {fileID: 4777512363150772380}
   - component: {fileID: 827394607890434770}
+  - component: {fileID: 6724686023322582744}
   m_Layer: 0
   m_Name: Personaje
   m_TagString: Player
@@ -216,6 +217,7 @@ MonoBehaviour:
   jumpSound: {fileID: 8300000, guid: 53e30336b72fa3b42b8b35a9172bea9a, type: 3}
   muerteSound: {fileID: 8300000, guid: 9821fbe03cdea1b4eb8bdc3c92f8233b, type: 3}
   IsGrounded: 0
+  camara: {fileID: 5215514079776039564, guid: 965060b1288d8fa4dae8c8e7dd216641, type: 3}
   speed: 8
   salto: 55
   orbJumpForce: 55
@@ -382,3 +384,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a47d9d3c56e500147b501d57d2ed4172, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &6724686023322582744
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7535854974079516897}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fec6289c1cbfa2498e7770093a91705, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  noSeMueveCanvas: {fileID: 8038520132961317550, guid: 400335598a874b643b923502ff3ff25c, type: 3}
+  mensajes:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  tiempoInactividad: 3
+  duracionMensaje: 2
