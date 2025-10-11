@@ -233,8 +233,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a44b40d7350f3347afff1a91de8ed54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Pj: {fileID: 0}
-  dashForce: 35
+  dashForce: 15
   dashDuration: 0.5
 --- !u!95 &2414807583230920700
 Animator:
