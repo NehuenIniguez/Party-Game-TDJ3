@@ -1,10 +1,11 @@
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 
 public class InactividadDetector : MonoBehaviour
 {
     [Header("Referencias")]
-    public Canvas noSeMueveCanvas;
+    public Image noSeMueveCanvas;
     public TextMeshProUGUI[] mensajes;
 
     [Header("Tiempos")]
@@ -15,10 +16,11 @@ public class InactividadDetector : MonoBehaviour
     private float tiempoSinMoverse = 0f;
     private Vector3 ultimaPosicion;
     private bool mostrandoMensaje = false;
+    private float velocidadTipeo = 0.02f; // Velocidad del efecto de tipeo
 
     void Start()
     {
-        ultimaPosicion = transform.position;
+        ultimaPosicion = this.transform.position;
         noSeMueveCanvas.gameObject.SetActive(false);
 
         // Desactivamos todos los textos
@@ -52,18 +54,31 @@ public class InactividadDetector : MonoBehaviour
         mostrandoMensaje = true;
 
         noSeMueveCanvas.gameObject.SetActive(true);
-        mensajes[mensajeActual].gameObject.SetActive(true);
+        var textoTMP = mensajes[mensajeActual];
+        textoTMP.gameObject.SetActive(true);
 
+        // Guardamos el texto completo y lo limpiamos para mostrarlo de a poco
+        string textoCompleto = textoTMP.text;
+        textoTMP.text = "";
+
+        // Efecto de tipeo
+        foreach (char c in textoCompleto)
+        {
+            textoTMP.text += c;
+            yield return new WaitForSeconds(velocidadTipeo);
+        }
+
+        // Esperar el resto del tiempo antes de cerrar el mensaje
         yield return new WaitForSeconds(duracionMensaje);
 
-        mensajes[mensajeActual].gameObject.SetActive(false);
+        textoTMP.gameObject.SetActive(false);
         noSeMueveCanvas.gameObject.SetActive(false);
 
         mensajeActual++;
         tiempoSinMoverse = 0f;
         mostrandoMensaje = false;
 
-        // Si ya se mostraron todos los mensajes, cerramos el juego
+        // Si se mostraron todos los mensajes, cerramos el juego
         if (mensajeActual >= mensajes.Length)
         {
             yield return new WaitForSeconds(1f);

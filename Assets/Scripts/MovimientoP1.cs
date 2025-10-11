@@ -13,7 +13,7 @@ public class MovimientoP1 : MonoBehaviour
     [SerializeField] private AudioClip jumpSound;
     [SerializeField] private AudioClip muerteSound;
     private AudioSource audioSource;
-    public bool IsGrounded = false;
+    //public bool IsGrounded = false;
     [SerializeField] private CinemachineCamera camara;
 
     [Header("Movimiento")]
@@ -41,6 +41,7 @@ public class MovimientoP1 : MonoBehaviour
 
     void Update()
     {
+        Debug.Log(transform.position);
         if (!canMove)
         {
             // Frena el movimiento horizontal, pero deja la velocidad vertical (por si está cayendo)
@@ -53,7 +54,7 @@ public class MovimientoP1 : MonoBehaviour
         float moveHorizontal = Input.GetAxis("Horizontal");
         rb2D.linearVelocity = new Vector2(moveHorizontal * speed, rb2D.linearVelocity.y);
 
-        if (IsGrounded)
+        if (IsGrounded())
         {
             animator.SetFloat("Caminata", Mathf.Abs(moveHorizontal));
         }
@@ -74,7 +75,7 @@ public class MovimientoP1 : MonoBehaviour
         }
 
         // Salto normal
-        if (Input.GetKeyDown(KeyCode.Space) && IsGrounded || Input.GetButtonDown("Jump") && IsGrounded)
+        if (Input.GetKeyDown(KeyCode.Space) && IsGrounded() || Input.GetButtonDown("Jump") && IsGrounded())
         {
             Jump(salto);
             animator.SetTrigger("Salto");
@@ -99,13 +100,13 @@ public class MovimientoP1 : MonoBehaviour
         rb2D.AddForce(new Vector2(0, fuerza), ForceMode2D.Impulse);
     }
 
-    //public bool IsGrounded()
-    //{
-    //    //
-    //    //Debug.Log(Mathf.Abs(rb2D.linearVelocity.y) < 0.01f);
-    //    
-    //    //return Mathf.Abs(rb2D.linearVelocity.y) < 0.01f;
-    //}
+    public bool IsGrounded()
+    {
+        
+        Debug.Log(Mathf.Abs(rb2D.linearVelocity.y) < 0.01f);
+
+        return Mathf.Abs(rb2D.linearVelocity.y) < 0.01f;
+    }
 
     void OnTriggerEnter2D(Collider2D collision)
     {
@@ -138,14 +139,14 @@ public class MovimientoP1 : MonoBehaviour
         if (collision.gameObject.CompareTag("Suelo"))
         {
             animator.SetTrigger("Piso");
-            IsGrounded = true;
+            //IsGrounded = true;
         }
     }
     void OnCollisionExit2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Suelo"))
         {
-            IsGrounded = false;
+            //IsGrounded = false;
             animator.SetFloat("VelocidadY", rb2D.linearVelocity.y);
         }
     }
