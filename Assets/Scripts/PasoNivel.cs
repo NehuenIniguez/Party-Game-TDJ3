@@ -28,7 +28,7 @@ public class PasoNivel : MonoBehaviour
   { 
     gameObject.GetComponent<Animator>().SetTrigger("Recolectado");
     audioSource.PlayOneShot(audioClip);
-    yield return new WaitForSeconds(1.5f);
+    yield return new WaitForSeconds(1f);
     SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
   }
 }
