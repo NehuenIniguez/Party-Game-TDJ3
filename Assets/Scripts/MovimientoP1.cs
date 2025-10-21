@@ -4,9 +4,11 @@ using System;
 using JetBrains.Annotations;
 using Unity.Cinemachine;
 
+
 public class MovimientoP1 : MonoBehaviour
 {
     private Rigidbody2D rb2D;
+    
 
     [SerializeField] private Transform respawnPoint;
 
@@ -36,6 +38,7 @@ public class MovimientoP1 : MonoBehaviour
         rb2D = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         audioSource = GetComponent<AudioSource>();
+        camara.GetComponent<CinemachineConfiner2D>().enabled = true ;
 
     }
 
@@ -151,10 +154,12 @@ public class MovimientoP1 : MonoBehaviour
         }
     }
 
-    IEnumerator aniamcionGanar()
+    
+   IEnumerator aniamcionGanar()
     {
         canMove = false;
         animator.SetTrigger("Ganar");
+        camara.GetComponent<CinemachineConfiner2D>().enabled = false ;
 
         // Guardamos los valores actuales
         Transform objetivoOriginal = camara.Follow;
@@ -165,7 +170,7 @@ public class MovimientoP1 : MonoBehaviour
 
         // Offset opcional (por si tu personaje está más abajo o arriba del centro visual)
         Vector3 offset = new Vector3(0, 0, -10f); // mantené la Z de la cámara original
-        
+
         Vector3 posicionObjetivo = transform.position;
 
         // Hacemos un zoom suave hacia el personaje
@@ -189,8 +194,10 @@ public class MovimientoP1 : MonoBehaviour
 
         // Espera mientras se reproduce la animación
         yield return new WaitForSeconds(2f);
+        camara.GetComponent<CinemachineConfiner2D>().enabled = false ;
 
     }
+
     IEnumerator aniamcionPerder()
     {
         audioSource.PlayOneShot(muerteSound);

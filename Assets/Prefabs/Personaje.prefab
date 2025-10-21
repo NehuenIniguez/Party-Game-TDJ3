@@ -216,7 +216,7 @@ MonoBehaviour:
   respawnPoint: {fileID: 0}
   jumpSound: {fileID: 8300000, guid: 53e30336b72fa3b42b8b35a9172bea9a, type: 3}
   muerteSound: {fileID: 8300000, guid: 9821fbe03cdea1b4eb8bdc3c92f8233b, type: 3}
-  camara: {fileID: 5215514079776039564, guid: 965060b1288d8fa4dae8c8e7dd216641, type: 3}
+  camara: {fileID: 0}
   speed: 8
   salto: 55
   orbJumpForce: 55
