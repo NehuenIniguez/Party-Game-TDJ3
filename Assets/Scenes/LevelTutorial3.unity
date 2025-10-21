@@ -626,11 +626,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1079699448506807336, guid: 965060b1288d8fa4dae8c8e7dd216641, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -79.291336
+      value: -87.70508
       objectReference: {fileID: 0}
     - target: {fileID: 1079699448506807336, guid: 965060b1288d8fa4dae8c8e7dd216641, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.27662706
+      value: -7.6933727
       objectReference: {fileID: 0}
     - target: {fileID: 1079699448506807336, guid: 965060b1288d8fa4dae8c8e7dd216641, type: 3}
       propertyPath: m_LocalPosition.z
@@ -680,6 +680,14 @@ PrefabInstance:
       propertyPath: Target.TrackingTarget
       value: 
       objectReference: {fileID: 702484731}
+    - target: {fileID: 9103409917433330496, guid: 965060b1288d8fa4dae8c8e7dd216641, type: 3}
+      propertyPath: TargetOffset.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9103409917433330496, guid: 965060b1288d8fa4dae8c8e7dd216641, type: 3}
+      propertyPath: TargetOffset.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9103409917433330496, guid: 965060b1288d8fa4dae8c8e7dd216641, type: 3}
       propertyPath: Composition.ScreenPosition.x
       value: -0.10078964
@@ -822,10 +830,10 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 23.147003, y: 22.559504}
-      - {x: -23.832954, y: 22.756163}
-      - {x: -23.581728, y: -6.556178}
-      - {x: 23.044832, y: -6.3212376}
+    - - {x: 23.16, y: 20.8}
+      - {x: -18, y: 20.8}
+      - {x: -18, y: -4.8}
+      - {x: 23.044832, y: -4.8}
   m_UseDelaunayMesh: 0
 --- !u!4 &702484731
 Transform:
@@ -1240,7 +1248,7 @@ Transform:
   m_GameObject: {fileID: 1087231574}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -89.418236, y: 0.29062, z: -2.867813}
+  m_LocalPosition: {x: -89.28387, y: 0.32455, z: -2.867813}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

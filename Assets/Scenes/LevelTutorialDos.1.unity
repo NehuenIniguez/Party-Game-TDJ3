@@ -248,11 +248,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1079699448506807336, guid: 965060b1288d8fa4dae8c8e7dd216641, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -100.59
+      value: -109
       objectReference: {fileID: 0}
     - target: {fileID: 1079699448506807336, guid: 965060b1288d8fa4dae8c8e7dd216641, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.6342139
+      value: -3.815786
       objectReference: {fileID: 0}
     - target: {fileID: 1079699448506807336, guid: 965060b1288d8fa4dae8c8e7dd216641, type: 3}
       propertyPath: m_LocalPosition.z
@@ -303,14 +303,29 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2076032644}
     - target: {fileID: 9103409917433330496, guid: 965060b1288d8fa4dae8c8e7dd216641, type: 3}
+      propertyPath: TargetOffset.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9103409917433330496, guid: 965060b1288d8fa4dae8c8e7dd216641, type: 3}
       propertyPath: TargetOffset.y
-      value: 5.45
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 965060b1288d8fa4dae8c8e7dd216641, type: 3}
+--- !u!114 &599828166 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5215514079776039564, guid: 965060b1288d8fa4dae8c8e7dd216641, type: 3}
+  m_PrefabInstance: {fileID: 599828165}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9dfa5b682dcd46bda6128250e975f58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &813860943
 GameObject:
   m_ObjectHideFlags: 0
@@ -1025,7 +1040,7 @@ Transform:
   m_GameObject: {fileID: 1990649122}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -100.59, y: 1.6342139, z: -10}
+  m_LocalPosition: {x: -100.69426, y: 1.60217, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1172,6 +1187,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2538709898023331883, guid: 9fad469218055984982982d05de9f833, type: 3}
+      propertyPath: camara
+      value: 
+      objectReference: {fileID: 599828166}
     - target: {fileID: 2538709898023331883, guid: 9fad469218055984982982d05de9f833, type: 3}
       propertyPath: respawnPoint
       value: 

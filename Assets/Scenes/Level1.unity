@@ -767,10 +767,10 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 19.979507, y: 19.204472}
-      - {x: -21.549767, y: 19.132685}
-      - {x: -21.805689, y: -6.546933}
-      - {x: 19.992388, y: -6.796384}
+    - - {x: 19.9, y: 19.204472}
+      - {x: -20.6, y: 19.132685}
+      - {x: -20.6, y: -6.3}
+      - {x: 19.9, y: -6.3}
   m_UseDelaunayMesh: 0
 --- !u!1 &1090931143
 GameObject:
@@ -1125,11 +1125,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1079699448506807336, guid: 965060b1288d8fa4dae8c8e7dd216641, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -79.50803
+      value: -87.91813
       objectReference: {fileID: 0}
     - target: {fileID: 1079699448506807336, guid: 965060b1288d8fa4dae8c8e7dd216641, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.1142063
+      value: -5.855794
       objectReference: {fileID: 0}
     - target: {fileID: 1079699448506807336, guid: 965060b1288d8fa4dae8c8e7dd216641, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1179,6 +1179,14 @@ PrefabInstance:
       propertyPath: Target.TrackingTarget
       value: 
       objectReference: {fileID: 1038613722}
+    - target: {fileID: 9103409917433330496, guid: 965060b1288d8fa4dae8c8e7dd216641, type: 3}
+      propertyPath: TargetOffset.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9103409917433330496, guid: 965060b1288d8fa4dae8c8e7dd216641, type: 3}
+      propertyPath: TargetOffset.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9103409917433330496, guid: 965060b1288d8fa4dae8c8e7dd216641, type: 3}
       propertyPath: Composition.ScreenPosition.x
       value: -0.0024999976
@@ -1647,7 +1655,7 @@ Transform:
   m_GameObject: {fileID: 1734299026}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -88.34512, y: 0.35952997, z: -2.8312087}
+  m_LocalPosition: {x: -88.36967, y: 0.34244, z: -2.8312087}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

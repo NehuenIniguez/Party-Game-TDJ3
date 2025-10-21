@@ -128,6 +128,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2538709898023331883, guid: 9fad469218055984982982d05de9f833, type: 3}
+      propertyPath: camara
+      value: 
+      objectReference: {fileID: 640864542}
+    - target: {fileID: 2538709898023331883, guid: 9fad469218055984982982d05de9f833, type: 3}
       propertyPath: respawnPoint
       value: 
       objectReference: {fileID: 1189753290}
@@ -247,11 +251,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1079699448506807336, guid: 965060b1288d8fa4dae8c8e7dd216641, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -118.54089
+      value: -126.95089
       objectReference: {fileID: 0}
     - target: {fileID: 1079699448506807336, guid: 965060b1288d8fa4dae8c8e7dd216641, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 7.234013
+      value: 1.6640129
       objectReference: {fileID: 0}
     - target: {fileID: 1079699448506807336, guid: 965060b1288d8fa4dae8c8e7dd216641, type: 3}
       propertyPath: m_LocalPosition.z
@@ -302,14 +306,29 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1853959422}
     - target: {fileID: 9103409917433330496, guid: 965060b1288d8fa4dae8c8e7dd216641, type: 3}
+      propertyPath: TargetOffset.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9103409917433330496, guid: 965060b1288d8fa4dae8c8e7dd216641, type: 3}
       propertyPath: TargetOffset.y
-      value: 5.57
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 965060b1288d8fa4dae8c8e7dd216641, type: 3}
+--- !u!114 &640864542 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5215514079776039564, guid: 965060b1288d8fa4dae8c8e7dd216641, type: 3}
+  m_PrefabInstance: {fileID: 640864541}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9dfa5b682dcd46bda6128250e975f58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &676472401
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -406,6 +425,10 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1506186975}
+    - target: {fileID: 8038520132961317550, guid: 400335598a874b643b923502ff3ff25c, type: 3}
+      propertyPath: m_VertexColorAlwaysGammaSpace
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

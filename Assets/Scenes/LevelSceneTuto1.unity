@@ -256,6 +256,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2538709898023331883, guid: 9fad469218055984982982d05de9f833, type: 3}
+      propertyPath: camara
+      value: 
+      objectReference: {fileID: 691266081}
+    - target: {fileID: 2538709898023331883, guid: 9fad469218055984982982d05de9f833, type: 3}
       propertyPath: respawnPoint
       value: 
       objectReference: {fileID: 764886509}
@@ -635,6 +639,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 965060b1288d8fa4dae8c8e7dd216641, type: 3}
+--- !u!114 &691266081 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5215514079776039564, guid: 965060b1288d8fa4dae8c8e7dd216641, type: 3}
+  m_PrefabInstance: {fileID: 691266080}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9dfa5b682dcd46bda6128250e975f58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &764886508
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1242,13 +1257,13 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 35b2b834572f3a643bf8f033b2e9e147, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.05
+  m_Volume: 0.12
   m_Pitch: 1
   Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 0
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500

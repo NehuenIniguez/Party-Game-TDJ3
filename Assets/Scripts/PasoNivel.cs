@@ -11,11 +11,27 @@ public class PasoNivel : MonoBehaviour
     audioSource = GetComponent<AudioSource>();
     }
 
-    void OnTriggerEnter2D(Collider2D collision)
+  void OnTriggerEnter2D(Collider2D collision)
   {
     if (collision.CompareTag("Player"))
     {
       StartCoroutine(PasoNivelCoroutine());
+    }
+  }
+  void Update()
+  {
+    reinicio();
+  }
+  public void reinicio()
+  {
+    if (Input.GetKeyDown(KeyCode.R))
+    {
+      SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    if (Input.GetKeyDown(KeyCode.Escape))
+    {
+      SceneManager.LoadScene("Menu");
     }
   }
 
