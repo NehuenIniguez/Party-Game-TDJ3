@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 208184468588523164}
   - component: {fileID: 5991003908831042534}
   - component: {fileID: 8860642842767032420}
+  - component: {fileID: 7653533140502363387}
   m_Layer: 0
   m_Name: Square 1
   m_TagString: Suelo
@@ -283,3 +284,18 @@ PolygonCollider2D:
       - {x: 0.21466577, y: -0.07626715}
       - {x: 0.2165104, y: 0.41201898}
   m_UseDelaunayMesh: 0
+--- !u!114 &7653533140502363387
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7391082254347783718}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 450fcf12071698c43a106545238e1a4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  puntoA: {fileID: 0}
+  puntoB: {fileID: 0}
+  duracion: 2
