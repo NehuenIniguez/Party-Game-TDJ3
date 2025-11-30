@@ -271,8 +271,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefabPlataforma: {fileID: 7391082254347783718, guid: 7bc1cf0c72f1d7a479b95e10e9798c6f, type: 3}
   puntoDisparo: {fileID: 377782851444674585}
-  velocidadPlataforma: 5
-  duracionPlataforma: 3
+  velocidadPlataforma: 3.7
+  duracionPlataforma: 4
 --- !u!82 &4777512363150772380
 AudioSource:
   m_ObjectHideFlags: 0

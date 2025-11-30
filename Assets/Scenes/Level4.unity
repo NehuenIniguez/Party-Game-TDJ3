@@ -360,6 +360,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4603536892281628661, guid: f030384e3e73a1b4f98dbac8640e93c1, type: 3}
   m_PrefabInstance: {fileID: 74479362}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &74479364 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7391082254347783718, guid: f030384e3e73a1b4f98dbac8640e93c1, type: 3}
+  m_PrefabInstance: {fileID: 74479362}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &167939470 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7877438293256940106, guid: dcef75d964631664faf7874d97488664, type: 3}
@@ -390,7 +395,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8979947907985688523, guid: a207ef2f38f973e4ca788331dc7a7ae4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -116.828415
+      value: -119.7
       objectReference: {fileID: 0}
     - target: {fileID: 8979947907985688523, guid: a207ef2f38f973e4ca788331dc7a7ae4, type: 3}
       propertyPath: m_LocalPosition.y
@@ -788,7 +793,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2987579785544038352, guid: 05da31eb8c860c140b60fedfb7bbb6cf, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -107.515884
+      value: -104.8
       objectReference: {fileID: 0}
     - target: {fileID: 2987579785544038352, guid: 05da31eb8c860c140b60fedfb7bbb6cf, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1288,7 +1293,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 749455206013622533, guid: 166b69e9c5a6d714db07a8ca0b8274b3, type: 3}
       propertyPath: orbes.Array.size
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 749455206013622533, guid: 166b69e9c5a6d714db07a8ca0b8274b3, type: 3}
       propertyPath: 'orbes.Array.data[0]'
@@ -1314,6 +1319,10 @@ PrefabInstance:
       propertyPath: 'orbes.Array.data[5]'
       value: 
       objectReference: {fileID: 1630678727}
+    - target: {fileID: 749455206013622533, guid: 166b69e9c5a6d714db07a8ca0b8274b3, type: 3}
+      propertyPath: 'orbes.Array.data[6]'
+      value: 
+      objectReference: {fileID: 74479364}
     - target: {fileID: 3549204167617975147, guid: 166b69e9c5a6d714db07a8ca0b8274b3, type: 3}
       propertyPath: m_Name
       value: DeathZone
@@ -1631,11 +1640,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5439127771828711877, guid: 1beda626fbeb0174b8559d050b4222d6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -114.923134
+      value: -105.7
       objectReference: {fileID: 0}
     - target: {fileID: 5439127771828711877, guid: 1beda626fbeb0174b8559d050b4222d6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 38.11
+      value: 32.2
       objectReference: {fileID: 0}
     - target: {fileID: 5439127771828711877, guid: 1beda626fbeb0174b8559d050b4222d6, type: 3}
       propertyPath: m_LocalPosition.z
