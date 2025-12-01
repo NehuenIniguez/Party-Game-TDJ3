@@ -78,7 +78,7 @@ public class MovimientoP1 : MonoBehaviour
         }
 
         // Salto normal
-        if (Input.GetKeyDown(KeyCode.Space) && IsGrounded() || Input.GetButtonDown("Jump") && IsGrounded())
+        if (Input.GetKeyDown(KeyCode.W) && IsGrounded() ) //|| Input.GetButtonDown("Jump") && IsGrounded()
         {
             Jump(salto);
             animator.SetTrigger("Salto");
@@ -87,7 +87,7 @@ public class MovimientoP1 : MonoBehaviour
         }
 
         // Salto con ORB
-        if (Input.GetKeyDown(KeyCode.Space) && isInsideOrb && currentOrb != null|| Input.GetButtonDown("Jump") && isInsideOrb && currentOrb != null)
+        if (Input.GetKeyDown(KeyCode.W) && isInsideOrb && currentOrb != null) //|| Input.GetButtonDown("Jump") && isInsideOrb && currentOrb != null
         {
             Jump(orbJumpForce);
             isInsideOrb = false;

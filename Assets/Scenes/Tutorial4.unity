@@ -666,11 +666,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3960175730128732375, guid: a7431c70068d4cf4da32a05ddfc5b7b5, type: 3}
       propertyPath: m_text
-      value: Cuando agarres el libro, pulsa W para generar una nube.
+      value: Cuando agarres el libro, pulsa la barra espaciadora para generar una
+        nube.
       objectReference: {fileID: 0}
     - target: {fileID: 3960175730128732375, guid: a7431c70068d4cf4da32a05ddfc5b7b5, type: 3}
       propertyPath: m_fontSize
-      value: 15
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 3960175730128732375, guid: a7431c70068d4cf4da32a05ddfc5b7b5, type: 3}
       propertyPath: m_margin.w
@@ -706,7 +707,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3960175730128732375, guid: a7431c70068d4cf4da32a05ddfc5b7b5, type: 3}
       propertyPath: m_fontSizeBase
-      value: 15
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 3960175730128732375, guid: a7431c70068d4cf4da32a05ddfc5b7b5, type: 3}
       propertyPath: m_fontColor32.rgba

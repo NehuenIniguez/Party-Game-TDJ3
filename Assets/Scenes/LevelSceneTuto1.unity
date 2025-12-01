@@ -1695,8 +1695,7 @@ PrefabInstance:
       objectReference: {fileID: 1265822450}
     - target: {fileID: 6398005398512123559, guid: a7431c70068d4cf4da32a05ddfc5b7b5, type: 3}
       propertyPath: m_text
-      value: Puedes moverte usando las teclas A;D y para saltar utiliza la barra
-        espaciadora.
+      value: Puedes moverte usando las teclas A;D y para saltar utiliza W.
       objectReference: {fileID: 0}
     - target: {fileID: 6398005398512123559, guid: a7431c70068d4cf4da32a05ddfc5b7b5, type: 3}
       propertyPath: m_fontSize
