@@ -13,6 +13,7 @@ TagManager:
   - Estrella
   - Libro
   - Pluma
+  - Proyectil
   layers:
   - Default
   - TransparentFX

@@ -9,7 +9,8 @@ public class MovimientoP1 : MonoBehaviour
 {
     private Rigidbody2D rb2D;
     
-
+    [SerializeField] private Vector2 velocidadRebte = new Vector2(5f, 5f);
+    public float tiempoRetroceso = 0.5f;
     [SerializeField] private Transform respawnPoint;
 
     [SerializeField] private AudioClip jumpSound;
@@ -144,7 +145,19 @@ public class MovimientoP1 : MonoBehaviour
             animator.SetTrigger("Piso");
             //IsGrounded = true;
         }
+          if (collision.gameObject.CompareTag("Proyectil")) 
+        {
+            // Calcula la dirección del retroceso
+            Vector2 direccionRetroceso = (transform.position - collision.transform.position).normalized;
+            
+            rb2D.AddForce(direccionRetroceso * velocidadRebte.x, ForceMode2D.Impulse);
+
+            // Desactiva el movimiento y espera un tiempo
+            StartCoroutine(DesactivarMovimiento());
+        }
     }
+
+   
     void OnCollisionExit2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Suelo"))
@@ -206,5 +219,16 @@ public class MovimientoP1 : MonoBehaviour
         animator.SetTrigger("Caida");
         transform.position = respawnPoint.position;
         gameObject.GetComponent<SpriteRenderer>().enabled = true;
+    }
+
+     
+
+    private IEnumerator DesactivarMovimiento()
+    {
+        animator.SetBool("Golpe",true);
+        canMove = false;
+        yield return new WaitForSeconds(tiempoRetroceso);
+        canMove = true;
+        animator.SetBool("Golpe", false);
     }
 }
