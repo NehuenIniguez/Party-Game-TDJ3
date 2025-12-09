@@ -242,11 +242,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eee2bfaff975f664489d5a98a5c19896, type: 3}
---- !u!1 &173952986 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6990876580233513659, guid: a7431c70068d4cf4da32a05ddfc5b7b5, type: 3}
-  m_PrefabInstance: {fileID: 5328170850307205214}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &366524186
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1374,16 +1369,16 @@ PrefabInstance:
       objectReference: {fileID: 1808397777}
     - target: {fileID: 2695099962411770440, guid: 6cffb3b4dc3a19a4795593ba74f46f9d, type: 3}
       propertyPath: textos.Array.size
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2695099962411770440, guid: 6cffb3b4dc3a19a4795593ba74f46f9d, type: 3}
       propertyPath: 'textos.Array.data[0]'
       value: 
-      objectReference: {fileID: 173952986}
+      objectReference: {fileID: 1603315303}
     - target: {fileID: 2695099962411770440, guid: 6cffb3b4dc3a19a4795593ba74f46f9d, type: 3}
       propertyPath: 'textos.Array.data[1]'
       value: 
-      objectReference: {fileID: 1603315303}
+      objectReference: {fileID: 1019705511}
     - target: {fileID: 2695099962411770440, guid: 6cffb3b4dc3a19a4795593ba74f46f9d, type: 3}
       propertyPath: 'textos.Array.data[2]'
       value: 
@@ -1695,7 +1690,8 @@ PrefabInstance:
       objectReference: {fileID: 1265822450}
     - target: {fileID: 6398005398512123559, guid: a7431c70068d4cf4da32a05ddfc5b7b5, type: 3}
       propertyPath: m_text
-      value: Puedes moverte usando las teclas A;D y para saltar utiliza W.
+      value: Puedes moverte usando las teclas A;D y para saltar utiliza la barra
+        espaciadora.
       objectReference: {fileID: 0}
     - target: {fileID: 6398005398512123559, guid: a7431c70068d4cf4da32a05ddfc5b7b5, type: 3}
       propertyPath: m_fontSize
@@ -1796,6 +1792,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 3332478233868787722, guid: a7431c70068d4cf4da32a05ddfc5b7b5, type: 3}
+    - {fileID: 6990876580233513659, guid: a7431c70068d4cf4da32a05ddfc5b7b5, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a7431c70068d4cf4da32a05ddfc5b7b5, type: 3}
