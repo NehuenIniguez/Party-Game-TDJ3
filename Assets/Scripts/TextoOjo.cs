@@ -47,6 +47,14 @@ public class ControladorTutorial : MonoBehaviour
             anim.updateMode = AnimatorUpdateMode.UnscaledTime;
         }
     }
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.T))
+        {
+            RepetirTutorial();
+        }
+       
+    }
 
     void AvanzarTexto()
     {
@@ -95,5 +103,28 @@ public class ControladorTutorial : MonoBehaviour
         yield return new WaitForSecondsRealtime(tiempoEntreTextos);
 
         AvanzarTexto();
+    }
+    public void RepetirTutorial()
+    {
+        // Reiniciar índices y pausar juego
+        indice = 0;
+        Time.timeScale = 0;
+
+        // Reactivar fondo
+        imagenFondo.enabled = true;
+
+        // Activar solo el primer texto
+        for (int i = 0; i < textos.Length; i++)
+            textos[i].SetActive(i == 0);
+
+        // Reiniciar la escritura
+        textoActualUI = textos[0].GetComponentInChildren<TextMeshProUGUI>();
+        textoCompleto = textoActualUI.text;
+        textoActualUI.text = "";
+
+        if (escribiendoTexto != null)
+            StopCoroutine(escribiendoTexto);
+
+        escribiendoTexto = StartCoroutine(MostrarCaracter());
     }
 }

@@ -9,7 +9,7 @@ public class DisparoPlataforma : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.KeypadEnter)) // tecla para disparar plataforma
+        if (Input.GetKeyDown(KeyCode.Return)) // tecla para disparar plataforma
         {
             DispararPlataforma();
         }

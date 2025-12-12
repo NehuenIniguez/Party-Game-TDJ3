@@ -6,6 +6,7 @@ public class PasoNivel : MonoBehaviour
 {
   private AudioSource audioSource;
   public AudioClip audioClip;
+  public Canvas canvasPausa;
     void Start()
     {
     audioSource = GetComponent<AudioSource>();
@@ -31,8 +32,13 @@ public class PasoNivel : MonoBehaviour
 
     if (Input.GetKeyDown(KeyCode.Escape))
     {
-      SceneManager.LoadScene("Menu");
+      canvasPausa.gameObject.SetActive(true);
+      Time.timeScale = 0f;
     }
+  }
+  public void BotonReinicio()
+  {
+    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
   }
 
   public void pasonivel()
