@@ -213,8 +213,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3b4da2731d34844783487bf72fe0642, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidadRebte: {x: 5, y: 5}
-  tiempoRetroceso: 0.5
+  velocidadRebte: {x: 1000, y: 200}
+  tiempoRetroceso: 1
   respawnPoint: {fileID: 0}
   jumpSound: {fileID: 8300000, guid: 53e30336b72fa3b42b8b35a9172bea9a, type: 3}
   muerteSound: {fileID: 8300000, guid: 9821fbe03cdea1b4eb8bdc3c92f8233b, type: 3}

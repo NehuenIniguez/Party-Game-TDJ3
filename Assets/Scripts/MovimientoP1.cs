@@ -148,17 +148,32 @@ public class MovimientoP1 : MonoBehaviour
         }
        if (collision.gameObject.CompareTag("LLUVIA"))
         {
-            // Dirección opuesta al objeto que golpea
-            Vector2 direccionRetroceso = (transform.position - collision.transform.position).normalized;
-        
-            // Limpiamos la velocidad actual para que el impulso sea consistente
-            rb2D.linearVelocity = Vector2.zero;
-        
-            // Aplicamos el impulso
-            rb2D.AddForce(direccionRetroceso * velocidadRebte, ForceMode2D.Impulse);
-        
-            // Desactiva el movimiento
-            StartCoroutine(DesactivarMovimiento());
+            // Tomamos el primer punto de contacto
+          ContactPoint2D contacto = collision.GetContact(0);
+
+          // Normal del choque (indica desde dónde vino el golpe)
+          Vector2 normal = contacto.normal;
+
+          // Reiniciamos velocidad
+          rb2D.linearVelocity = Vector2.zero;
+
+          Vector2 fuerzaRetroceso = Vector2.zero;
+
+          // 👉 Si el choque fue lateral (normal más horizontal que vertical)
+          if (Mathf.Abs(normal.x) > Mathf.Abs(normal.y))
+          {
+              // Empuje fuerte horizontal, opuesto al impacto
+              fuerzaRetroceso = new Vector2(-normal.x * velocidadRebte.x * 2f, velocidadRebte.y * 0.3f);
+          }
+          else
+          {
+              // Choque vertical (opcional)
+              //fuerzaRetroceso = new Vector2(0, velocidadRebte.y);
+          }
+
+          rb2D.AddForce(fuerzaRetroceso, ForceMode2D.Impulse);
+
+          StartCoroutine(DesactivarMovimiento());
         }
     }
 

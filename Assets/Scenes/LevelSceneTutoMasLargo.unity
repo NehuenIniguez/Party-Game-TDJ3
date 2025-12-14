@@ -135,6 +135,10 @@ PrefabInstance:
       propertyPath: respawnPoint
       value: 
       objectReference: {fileID: 1189753290}
+    - target: {fileID: 2538709898023331883, guid: 9fad469218055984982982d05de9f833, type: 3}
+      propertyPath: velocidadRebte.x
+      value: 600
+      objectReference: {fileID: 0}
     - target: {fileID: 5657670289410916608, guid: 9fad469218055984982982d05de9f833, type: 3}
       propertyPath: m_LocalPosition.x
       value: -126.95089
@@ -337,6 +341,10 @@ PrefabInstance:
     - target: {fileID: 790888986663774665, guid: 3279985aaab2eda4ea31a18f9c29c54a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5969959330394054157, guid: 3279985aaab2eda4ea31a18f9c29c54a, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -24.589996
       objectReference: {fileID: 0}
     - target: {fileID: 6119820287966071142, guid: 3279985aaab2eda4ea31a18f9c29c54a, type: 3}
       propertyPath: m_Name
