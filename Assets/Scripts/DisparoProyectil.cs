@@ -4,9 +4,8 @@ public class DisparoProyectil : MonoBehaviour
 {
     public GameObject prefabPlataforma;
     public Transform puntoDisparo;
-    public float velocidadPlataforma = 5f;
-    public float duracionPlataforma = 3f;
-    public float tiempoEntreDisparos = 1f;
+    //public float duracionPlataforma = 1f;
+    public float tiempoEntreDisparos = 10f;
 
     private float tiempoUltimoDisparo = 0f;
 
@@ -26,17 +25,10 @@ public class DisparoProyectil : MonoBehaviour
     {
         // Instanciar la plataforma
         GameObject plataforma = Instantiate(prefabPlataforma, puntoDisparo.position, Quaternion.identity);
+        Debug.Log("hola que tal chavales");
 
-        // Obtener Rigidbody2D
-        Rigidbody2D rb = plataforma.GetComponent<Rigidbody2D>();
-
-        if (rb != null)
-        {
-            // Velocity correcto (linearVelocity no existe)
-            rb.linearVelocity = -transform.right * velocidadPlataforma;
-        }
 
         // Destruir luego de X segundos
-        Destroy(plataforma, duracionPlataforma);
+        //Destroy(plataforma, duracionPlataforma);
     }
 }

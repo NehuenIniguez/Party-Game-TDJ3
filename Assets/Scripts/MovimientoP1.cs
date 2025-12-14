@@ -9,8 +9,8 @@ public class MovimientoP1 : MonoBehaviour
 {
     private Rigidbody2D rb2D;
     
-    [SerializeField] private Vector2 velocidadRebte = new Vector2(5f, 5f);
-    public float tiempoRetroceso = 0.5f;
+    [SerializeField] private Vector2 velocidadRebte = new Vector2(100f, 100f);
+    public float tiempoRetroceso = 1f;
     [SerializeField] private Transform respawnPoint;
 
     [SerializeField] private AudioClip jumpSound;
@@ -123,6 +123,7 @@ public class MovimientoP1 : MonoBehaviour
         {
             StartCoroutine(aniamcionGanar());
         }
+        
     }
 
     void OnTriggerExit2D(Collider2D collision)
@@ -145,14 +146,18 @@ public class MovimientoP1 : MonoBehaviour
             animator.SetTrigger("Piso");
             //IsGrounded = true;
         }
-          if (collision.gameObject.CompareTag("Proyectil")) 
+       if (collision.gameObject.CompareTag("LLUVIA"))
         {
-            // Calcula la dirección del retroceso
+            // Dirección opuesta al objeto que golpea
             Vector2 direccionRetroceso = (transform.position - collision.transform.position).normalized;
-            
-            rb2D.AddForce(direccionRetroceso * velocidadRebte.x, ForceMode2D.Impulse);
-
-            // Desactiva el movimiento y espera un tiempo
+        
+            // Limpiamos la velocidad actual para que el impulso sea consistente
+            rb2D.linearVelocity = Vector2.zero;
+        
+            // Aplicamos el impulso
+            rb2D.AddForce(direccionRetroceso * velocidadRebte, ForceMode2D.Impulse);
+        
+            // Desactiva el movimiento
             StartCoroutine(DesactivarMovimiento());
         }
     }

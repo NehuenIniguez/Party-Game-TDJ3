@@ -14,14 +14,15 @@ TagManager:
   - Libro
   - Pluma
   - Proyectil
+  - LLUVIA
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Player
   - Water
   - UI
-  - 
+  - LLUVIA
   - 
   - 
   - 
